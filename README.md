@@ -18,5 +18,12 @@ Django restframework project that offers get and post api's for a basic data str
     *   python manage.py runserver
 5. Run tests (test_product_creation will create a product by invoking the post api and ensure it is created by invoking the get api).
     *   fab run_tests
-    
-This has been tested so far on the mac osx.
+6. To manually test the api, use curl commands from the command line.
+   *     curl http://127.0.0.1:8000/products/
+   *     curl \
+         	--header "Content-Type: application/json" \
+         	--request post \
+         	--data '{ "id":12, "name":"raspberries" }' \
+         	 http://127.0.0.1:8000/products/
+
+   This has been tested so far on the mac osx.
