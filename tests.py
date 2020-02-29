@@ -13,6 +13,7 @@ class tests(unittest.TestCase):
         except ConnectionFailure:
             self.assertTrue(False)
 
+
     def test_product_creation(self):
         from products.loader import mongoLoader
         import requests
