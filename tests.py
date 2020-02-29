@@ -1,5 +1,6 @@
 import unittest
 
+
 class tests(unittest.TestCase):
 
     def test_mongo_connection(self):
@@ -11,6 +12,7 @@ class tests(unittest.TestCase):
                 self.assertTrue(True)
         except ConnectionFailure:
             self.assertTrue(False)
+
 
     def test_product_creation(self):
         from products.loader import mongoLoader
