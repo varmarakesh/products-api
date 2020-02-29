@@ -42,3 +42,5 @@ def git_commit_push(msg):
 @task
 def run_tests():
     local('python -m unittest -v tests')
+
+
