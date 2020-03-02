@@ -1,5 +1,6 @@
 from fabric.api import *
 
+
 git_email = 'varma.rakesh@gmail.com'
 git_usr = 'varmarakesh'
 git_repo_url = 'https://github.com/varmarakesh/products-api'
